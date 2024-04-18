@@ -58,6 +58,14 @@ public class simuladores extends javax.swing.JFrame {
         protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         protocolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
         protocolo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        protocolo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                protocoloMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                protocoloMouseExited(evt);
+            }
+        });
         jPanel2.add(protocolo);
 
         maniobras.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -124,10 +132,24 @@ public class simuladores extends javax.swing.JFrame {
 
     private void embarqueMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseExited
         java.awt.Dimension size = embarque.getSize();
-    int width = (int) (size.getWidth() / 1.1);
-    int height = (int) (size.getHeight() / 1.1);
-    embarque.setSize(width, height);
+        int width = (int) (size.getWidth() / 1.1);
+        int height = (int) (size.getHeight() / 1.1);
+        embarque.setSize(width, height);
     }//GEN-LAST:event_embarqueMouseExited
+
+    private void protocoloMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_protocoloMouseEntered
+        java.awt.Dimension size = protocolo.getSize();
+        int width = (int) (size.getWidth() * 1.1);
+        int height = (int) (size.getHeight() * 1.1);
+        protocolo.setSize(width, height);
+    }//GEN-LAST:event_protocoloMouseEntered
+
+    private void protocoloMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_protocoloMouseExited
+        java.awt.Dimension size = protocolo.getSize();
+        int width = (int) (size.getWidth() / 1.1);
+        int height = (int) (size.getHeight() / 1.1);
+        protocolo.setSize(width, height);
+    }//GEN-LAST:event_protocoloMouseExited
 
     /**
      * @param args the command line arguments
