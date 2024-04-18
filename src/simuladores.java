@@ -1,16 +1,16 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
 
 /**
  *
  * @author Wick
  */
-public class simuladores extends javax.swing.JFrame {
+public class simuladores extends javax.swing.JPanel {
 
     /**
-     * Creates new form simuladores
+     * Creates new form simu
      */
     public simuladores() {
         initComponents();
@@ -25,7 +25,6 @@ public class simuladores extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         embarque = new javax.swing.JLabel();
         protocolo = new javax.swing.JLabel();
@@ -34,38 +33,20 @@ public class simuladores extends javax.swing.JFrame {
         señalizacion = new javax.swing.JLabel();
         rescate = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jPanel1.setOpaque(false);
+        setPreferredSize(new java.awt.Dimension(1552, 880));
 
         jPanel2.setBackground(new java.awt.Color(10, 38, 72));
-        jPanel2.setLayout(new java.awt.GridLayout(2, 3, 10, 10));
+        jPanel2.setLayout(new java.awt.GridLayout(2, 3));
 
         embarque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         embarque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton0.png"))); // NOI18N
         embarque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         embarque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        embarque.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                embarqueMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                embarqueMouseExited(evt);
-            }
-        });
         jPanel2.add(embarque);
 
         protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         protocolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
         protocolo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        protocolo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                protocoloMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                protocoloMouseExited(evt);
-            }
-        });
         jPanel2.add(protocolo);
 
         maniobras.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -88,107 +69,21 @@ public class simuladores extends javax.swing.JFrame {
         rescate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel2.add(rescate);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1261, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 634, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1261, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1552, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 634, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE)
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void embarqueMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseEntered
-        java.awt.Dimension size = embarque.getSize();
-        int width = (int) (size.getWidth() * 1.1);
-        int height = (int) (size.getHeight() * 1.1);
-        embarque.setSize(width, height);
-    }//GEN-LAST:event_embarqueMouseEntered
-
-    private void embarqueMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseExited
-        java.awt.Dimension size = embarque.getSize();
-        int width = (int) (size.getWidth() / 1.1);
-        int height = (int) (size.getHeight() / 1.1);
-        embarque.setSize(width, height);
-    }//GEN-LAST:event_embarqueMouseExited
-
-    private void protocoloMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_protocoloMouseEntered
-        java.awt.Dimension size = protocolo.getSize();
-        int width = (int) (size.getWidth() * 1.1);
-        int height = (int) (size.getHeight() * 1.1);
-        protocolo.setSize(width, height);
-    }//GEN-LAST:event_protocoloMouseEntered
-
-    private void protocoloMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_protocoloMouseExited
-        java.awt.Dimension size = protocolo.getSize();
-        int width = (int) (size.getWidth() / 1.1);
-        int height = (int) (size.getHeight() / 1.1);
-        protocolo.setSize(width, height);
-    }//GEN-LAST:event_protocoloMouseExited
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(simuladores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(simuladores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(simuladores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(simuladores.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new simuladores().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel embarque;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel maniobras;
     private javax.swing.JLabel protocolo;
