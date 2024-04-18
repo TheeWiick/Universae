@@ -1,3 +1,7 @@
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -13,7 +17,19 @@ public class main extends javax.swing.JFrame {
      * Creates new form main
      */
     public main() {
-        initComponents();
+        initComponents();     
+        
+        simuladores sim = new simuladores();
+        sim.setSize(1552, 880);
+        sim.setLocation(0,0);
+        content.removeAll();
+        content.add(sim, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+        
+        
+        this.setLocationRelativeTo(this);
+        utilidades.SetImageLabel(ico1,"src/iconos/LauncherButton8.png");
     }
 
     /**
@@ -25,8 +41,8 @@ public class main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        content = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         ico1 = new javax.swing.JLabel();
         ico2 = new javax.swing.JLabel();
@@ -47,96 +63,106 @@ public class main extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1920, 1080));
 
-        jPanel3.setOpaque(false);
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1552, Short.MAX_VALUE)
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 882, Short.MAX_VALUE)
-        );
-
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        content.setPreferredSize(new java.awt.Dimension(1552, 880));
+
+        javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
+        content.setLayout(contentLayout);
+        contentLayout.setHorizontalGroup(
+            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1550, Short.MAX_VALUE)
+        );
+        contentLayout.setVerticalGroup(
+            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 880, Short.MAX_VALUE)
+        );
+
+        jPanel2.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 1550, 880));
+
         jPanel1.setOpaque(false);
-        jPanel1.setLayout(new java.awt.GridLayout(1, 14, 6, 0));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         ico1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton8.png"))); // NOI18N
         ico1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico1);
+        ico1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                ico1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                ico1MouseExited(evt);
+            }
+        });
+        jPanel1.add(ico1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 0, 105, 130));
 
         ico2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton0.png"))); // NOI18N
         ico2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico2);
+        jPanel1.add(ico2, new org.netbeans.lib.awtextra.AbsoluteConstraints(112, 0, 105, 130));
 
         ico3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton1.png"))); // NOI18N
         ico3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico3);
+        jPanel1.add(ico3, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 0, 105, 130));
 
         ico4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton2.png"))); // NOI18N
         ico4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico4);
+        jPanel1.add(ico4, new org.netbeans.lib.awtextra.AbsoluteConstraints(334, 0, 105, 130));
 
         ico5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton3.png"))); // NOI18N
         ico5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico5);
+        jPanel1.add(ico5, new org.netbeans.lib.awtextra.AbsoluteConstraints(445, 0, 105, 130));
 
         ico6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton4.png"))); // NOI18N
         ico6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico6);
+        jPanel1.add(ico6, new org.netbeans.lib.awtextra.AbsoluteConstraints(556, 0, 105, 130));
 
         ico7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton5.png"))); // NOI18N
         ico7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico7);
+        jPanel1.add(ico7, new org.netbeans.lib.awtextra.AbsoluteConstraints(667, 0, 105, 130));
 
         ico8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton6.png"))); // NOI18N
         ico8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico8);
+        jPanel1.add(ico8, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 0, 105, 130));
 
         ico9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton7.png"))); // NOI18N
         ico9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico9);
+        jPanel1.add(ico9, new org.netbeans.lib.awtextra.AbsoluteConstraints(889, 0, 105, 130));
 
         ico10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton13.png"))); // NOI18N
         ico10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico10);
+        jPanel1.add(ico10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 0, 105, 130));
 
         ico11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton9.png"))); // NOI18N
         ico11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico11);
+        jPanel1.add(ico11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1111, 0, 105, 130));
 
         ico12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton10.png"))); // NOI18N
         ico12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico12);
+        jPanel1.add(ico12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1222, 0, 105, 130));
 
         ico13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton11.png"))); // NOI18N
         ico13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico13);
+        jPanel1.add(ico13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1333, 0, 105, 130));
 
         ico14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton12.png"))); // NOI18N
         ico14.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico14);
+        jPanel1.add(ico14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1444, 0, 105, 130));
 
-        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, 1550, 130));
+        jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 80, 1550, 120));
 
         bg.setBackground(new java.awt.Color(0, 0, 0));
         bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fondo/FondoBase.png"))); // NOI18N
@@ -148,22 +174,24 @@ public class main extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addGap(0, 368, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addGap(0, 198, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ico1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ico1MouseEntered
+        Dimension dimension = new Dimension (20,20);
+        utilidades.SetImageLabel(ico1, "src/iconos/LauncherButton8.png", dimension);
+        
+    }//GEN-LAST:event_ico1MouseEntered
+
+    private void ico1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ico1MouseExited
+        utilidades.SetImageLabel(ico1,"src/iconos/LauncherButton8.png");
+    }//GEN-LAST:event_ico1MouseExited
 
     /**
      * @param args the command line arguments
@@ -199,9 +227,10 @@ public class main extends javax.swing.JFrame {
             }
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel bg;
+    private javax.swing.JPanel content;
     private javax.swing.JLabel ico1;
     private javax.swing.JLabel ico10;
     private javax.swing.JLabel ico11;
@@ -218,6 +247,5 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel ico9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
 }
