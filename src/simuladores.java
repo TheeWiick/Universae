@@ -38,7 +38,7 @@ public class simuladores extends javax.swing.JFrame {
 
         jPanel1.setOpaque(false);
 
-        jPanel2.setBackground(new java.awt.Color(14, 77, 144));
+        jPanel2.setBackground(new java.awt.Color(10, 38, 72));
         jPanel2.setLayout(new java.awt.GridLayout(2, 3));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
