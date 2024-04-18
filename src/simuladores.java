@@ -27,49 +27,58 @@ public class simuladores extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        embarque = new javax.swing.JLabel();
+        protocolo = new javax.swing.JLabel();
+        maniobras = new javax.swing.JLabel();
+        tipoologia = new javax.swing.JLabel();
+        señalizacion = new javax.swing.JLabel();
+        rescate = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setOpaque(false);
 
         jPanel2.setBackground(new java.awt.Color(10, 38, 72));
-        jPanel2.setLayout(new java.awt.GridLayout(2, 3));
+        jPanel2.setLayout(new java.awt.GridLayout(2, 3, 10, 10));
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton0.png"))); // NOI18N
-        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jLabel2);
+        embarque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        embarque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton0.png"))); // NOI18N
+        embarque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        embarque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        embarque.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                embarqueMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                embarqueMouseExited(evt);
+            }
+        });
+        jPanel2.add(embarque);
 
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
-        jLabel5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jLabel5);
+        protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        protocolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
+        protocolo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(protocolo);
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton2.png"))); // NOI18N
-        jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jLabel4);
+        maniobras.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        maniobras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton2.png"))); // NOI18N
+        maniobras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(maniobras);
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton3.png"))); // NOI18N
-        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jLabel1);
+        tipoologia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tipoologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton3.png"))); // NOI18N
+        tipoologia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(tipoologia);
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton4.png"))); // NOI18N
-        jLabel3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jLabel3);
+        señalizacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        señalizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton4.png"))); // NOI18N
+        señalizacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(señalizacion);
 
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton5.png"))); // NOI18N
-        jLabel6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(jLabel6);
+        rescate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        rescate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton5.png"))); // NOI18N
+        rescate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(rescate);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -105,6 +114,20 @@ public class simuladores extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void embarqueMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseEntered
+        java.awt.Dimension size = embarque.getSize();
+        int width = (int) (size.getWidth() * 1.1);
+        int height = (int) (size.getHeight() * 1.1);
+        embarque.setSize(width, height);
+    }//GEN-LAST:event_embarqueMouseEntered
+
+    private void embarqueMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseExited
+        java.awt.Dimension size = embarque.getSize();
+    int width = (int) (size.getWidth() / 1.1);
+    int height = (int) (size.getHeight() / 1.1);
+    embarque.setSize(width, height);
+    }//GEN-LAST:event_embarqueMouseExited
 
     /**
      * @param args the command line arguments
@@ -142,13 +165,13 @@ public class simuladores extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel embarque;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel maniobras;
+    private javax.swing.JLabel protocolo;
+    private javax.swing.JLabel rescate;
+    private javax.swing.JLabel señalizacion;
+    private javax.swing.JLabel tipoologia;
     // End of variables declaration//GEN-END:variables
 }
