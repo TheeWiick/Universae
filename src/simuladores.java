@@ -42,6 +42,11 @@ public class simuladores extends javax.swing.JPanel {
         embarque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton0.png"))); // NOI18N
         embarque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         embarque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        embarque.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                embarqueMouseEntered(evt);
+            }
+        });
         jPanel2.add(embarque);
 
         protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -80,6 +85,10 @@ public class simuladores extends javax.swing.JPanel {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void embarqueMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_embarqueMouseEntered
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
