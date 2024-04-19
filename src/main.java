@@ -131,42 +131,42 @@ public class main extends javax.swing.JFrame {
         ico6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton6.png"))); // NOI18N
         ico6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico6, new org.netbeans.lib.awtextra.AbsoluteConstraints(667, 0, 105, 130));
+        jPanel1.add(ico6, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 10, 103, 111));
 
         ico7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton7.png"))); // NOI18N
         ico7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico7, new org.netbeans.lib.awtextra.AbsoluteConstraints(778, 0, 105, 130));
+        jPanel1.add(ico7, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 10, 103, 111));
 
         ico8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton8.png"))); // NOI18N
         ico8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico8, new org.netbeans.lib.awtextra.AbsoluteConstraints(889, 0, 105, 130));
+        jPanel1.add(ico8, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 10, 103, 111));
 
         ico10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton10.png"))); // NOI18N
         ico10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1111, 0, 105, 130));
+        jPanel1.add(ico10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 10, 103, 111));
 
         ico11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton11.png"))); // NOI18N
         ico11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1222, 0, 105, 130));
+        jPanel1.add(ico11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1210, 10, 103, 111));
 
         ico12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton12.png"))); // NOI18N
         ico12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1333, 0, 105, 130));
+        jPanel1.add(ico12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1320, 10, 103, 111));
 
         ico13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton13.png"))); // NOI18N
         ico13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1444, 0, 105, 130));
+        jPanel1.add(ico13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1430, 10, 103, 111));
 
         ico9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton9.png"))); // NOI18N
         ico9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 0, 105, 130));
+        jPanel1.add(ico9, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 10, 103, 111));
 
         jPanel2.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 70, 1550, 130));
 
