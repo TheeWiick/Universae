@@ -1,3 +1,7 @@
+
+import java.awt.Dimension;
+import javax.swing.JLabel;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
@@ -14,7 +18,15 @@ public class simuladores extends javax.swing.JPanel {
      */
     public simuladores() {
         initComponents();
-    }
+        
+        JLabel[] miniaturas = new JLabel[]{embarque,protocolo,maniobras,tipologia,senalizacion,rescate};
+        
+        
+        for(int i = 0; i < 5; i++){
+            String ruta = "src/miniaturas simuladores/HomeButton0" + i + ".png";
+            utilidades.SetImageLabel(miniaturas[i], "src/miniaturas simuladores/HomeButton" + (i + 0) + ".png", new Dimension (381, 291));
+        }
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -29,50 +41,45 @@ public class simuladores extends javax.swing.JPanel {
         embarque = new javax.swing.JLabel();
         protocolo = new javax.swing.JLabel();
         maniobras = new javax.swing.JLabel();
-        tipoologia = new javax.swing.JLabel();
-        señalizacion = new javax.swing.JLabel();
+        tipologia = new javax.swing.JLabel();
+        senalizacion = new javax.swing.JLabel();
         rescate = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(1552, 880));
 
         jPanel2.setBackground(new java.awt.Color(10, 38, 72));
-        jPanel2.setLayout(new java.awt.GridLayout(2, 3));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         embarque.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         embarque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton0.png"))); // NOI18N
         embarque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         embarque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        embarque.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                embarqueMouseEntered(evt);
-            }
-        });
-        jPanel2.add(embarque);
+        jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 517, 440));
 
         protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         protocolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
         protocolo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(protocolo);
+        jPanel2.add(protocolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(517, 0, 517, 440));
 
         maniobras.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         maniobras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton2.png"))); // NOI18N
         maniobras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(maniobras);
+        jPanel2.add(maniobras, new org.netbeans.lib.awtextra.AbsoluteConstraints(1034, 0, 517, 440));
 
-        tipoologia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        tipoologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton3.png"))); // NOI18N
-        tipoologia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(tipoologia);
+        tipologia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tipologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton3.png"))); // NOI18N
+        tipologia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(tipologia, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 517, 440));
 
-        señalizacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        señalizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton4.png"))); // NOI18N
-        señalizacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(señalizacion);
+        senalizacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        senalizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton4.png"))); // NOI18N
+        senalizacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(senalizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(517, 440, 517, 440));
 
         rescate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         rescate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton5.png"))); // NOI18N
         rescate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(rescate);
+        jPanel2.add(rescate, new org.netbeans.lib.awtextra.AbsoluteConstraints(1034, 440, 517, 440));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -82,13 +89,9 @@ public class simuladores extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, 880, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void embarqueMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseEntered
-        // TODO add your handling code here:
-    }//GEN-LAST:event_embarqueMouseEntered
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -97,7 +100,7 @@ public class simuladores extends javax.swing.JPanel {
     private javax.swing.JLabel maniobras;
     private javax.swing.JLabel protocolo;
     private javax.swing.JLabel rescate;
-    private javax.swing.JLabel señalizacion;
-    private javax.swing.JLabel tipoologia;
+    private javax.swing.JLabel senalizacion;
+    private javax.swing.JLabel tipologia;
     // End of variables declaration//GEN-END:variables
 }
