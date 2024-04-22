@@ -1,5 +1,8 @@
 import java.awt.BorderLayout;
 import java.awt.Dimension;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 /*
@@ -36,8 +39,36 @@ public class main extends javax.swing.JFrame {
             String ruta = "src/iconos/LauncherButton" + i + ".png";
             utilidades.SetImageLabel(escudos[i], "src/iconos/LauncherButton" + (i + 0) + ".png");
         }
-    }
     
+        ImageIcon[] icons = new ImageIcon[14];
+        MouseListener[] mouseListeners = new MouseListener[14];
+        for (int i = 0; i < icons.length; i++) {
+            icons[i] = new ImageIcon("src/iconos/LauncherButton" + i + ".png");
+            final int index = i;
+            mouseListeners[i] = new MouseListener() {
+                @Override
+                public void mouseClicked(MouseEvent e) {}
+
+                @Override
+                public void mousePressed(MouseEvent e) {}
+
+                @Override
+                public void mouseReleased(MouseEvent e) {}
+
+                @Override
+                public void mouseEntered(MouseEvent e) {
+                    Dimension dimension = new Dimension (5, 5);
+                    utilidades.SetImageLabel(escudos[index], "src/iconos/LauncherButton" + index + ".png", dimension);
+                }
+
+                @Override
+                public void mouseExited(MouseEvent e) {
+                    utilidades.SetImageLabel(escudos[index], "src/iconos/LauncherButton" + index + ".png");
+                }
+            };
+            escudos[i].addMouseListener(mouseListeners[i]);
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -95,30 +126,22 @@ public class main extends javax.swing.JFrame {
         ico0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton0.png"))); // NOI18N
         ico0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        ico0.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                ico0MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                ico0MouseExited(evt);
-            }
-        });
         jPanel1.add(ico0, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 103, 111));
 
         ico1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton1.png"))); // NOI18N
         ico1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, -1, 111));
+        jPanel1.add(ico1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 103, 111));
 
         ico2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton2.png"))); // NOI18N
         ico2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, -1, 111));
+        jPanel1.add(ico2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 103, 111));
 
         ico3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton3.png"))); // NOI18N
         ico3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(ico3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, -1, 111));
+        jPanel1.add(ico3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, 103, 111));
 
         ico4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton4.png"))); // NOI18N
@@ -190,15 +213,6 @@ public class main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void ico0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ico0MouseEntered
-        Dimension dimension = new Dimension (5, 5);
-        utilidades.SetImageLabel(ico0, "src/iconos/LauncherButton0.png", dimension);
-    }//GEN-LAST:event_ico0MouseEntered
-
-    private void ico0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ico0MouseExited
-        utilidades.SetImageLabel(ico0, "src/iconos/LauncherButton0.png");
-    }//GEN-LAST:event_ico0MouseExited
 
     /**
      * @param args the command line arguments

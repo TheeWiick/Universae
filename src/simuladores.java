@@ -1,5 +1,8 @@
 
 import java.awt.Dimension;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 /*
@@ -23,8 +26,37 @@ public class simuladores extends javax.swing.JPanel {
         
         
         for(int i = 0; i < 5; i++){
-            String ruta = "src/miniaturas simuladores/HomeButton0" + i + ".png";
+            String ruta = "src/miniaturas simuladores/HomeButton" + i + ".png";
             utilidades.SetImageLabel(miniaturas[i], "src/miniaturas simuladores/HomeButton" + (i + 0) + ".png", new Dimension (381, 291));
+        }
+        
+        ImageIcon[] icons = new ImageIcon[6];
+        MouseListener[] mouseListeners = new MouseListener[6];
+        for (int i = 0; i < icons.length; i++) {
+            icons[i] = new ImageIcon("src/miniaturas simuladores/HomeButton" + i + ".png");
+            final int index = i;
+            mouseListeners[i] = new MouseListener() {
+                @Override
+                public void mouseClicked(MouseEvent e) {}
+
+                @Override
+                public void mousePressed(MouseEvent e) {}
+
+                @Override
+                public void mouseReleased(MouseEvent e) {}
+
+                @Override
+                public void mouseEntered(MouseEvent e) {
+                    Dimension dimension = new Dimension (5, 5);
+                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
+                }
+
+                @Override
+                public void mouseExited(MouseEvent e) {
+                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png");
+                }
+            };
+            miniaturas[i].addMouseListener(mouseListeners[i]);
         }
 }
 
@@ -54,7 +86,7 @@ public class simuladores extends javax.swing.JPanel {
         embarque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton0.png"))); // NOI18N
         embarque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         embarque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 517, 440));
+        jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 440, 340));
 
         protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         protocolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
@@ -69,7 +101,10 @@ public class simuladores extends javax.swing.JPanel {
         tipologia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         tipologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton3.png"))); // NOI18N
         tipologia.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(tipologia, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 517, 440));
+        tipologia.setMaximumSize(new java.awt.Dimension(381, 291));
+        tipologia.setMinimumSize(new java.awt.Dimension(381, 291));
+        tipologia.setPreferredSize(new java.awt.Dimension(381, 291));
+        jPanel2.add(tipologia, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 462, 400, 300));
 
         senalizacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         senalizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton4.png"))); // NOI18N
@@ -85,7 +120,7 @@ public class simuladores extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1552, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
