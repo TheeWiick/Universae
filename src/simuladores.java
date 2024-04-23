@@ -86,17 +86,17 @@ public class simuladores extends javax.swing.JPanel {
         embarque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton0.png"))); // NOI18N
         embarque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         embarque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 440, 340));
+        jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 381, 291));
 
         protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         protocolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
         protocolo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(protocolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(517, 0, 517, 440));
+        jPanel2.add(protocolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 80, 380, 291));
 
         maniobras.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         maniobras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton2.png"))); // NOI18N
         maniobras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(maniobras, new org.netbeans.lib.awtextra.AbsoluteConstraints(1034, 0, 517, 440));
+        jPanel2.add(maniobras, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 80, 381, 291));
 
         tipologia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         tipologia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton3.png"))); // NOI18N
@@ -104,17 +104,17 @@ public class simuladores extends javax.swing.JPanel {
         tipologia.setMaximumSize(new java.awt.Dimension(381, 291));
         tipologia.setMinimumSize(new java.awt.Dimension(381, 291));
         tipologia.setPreferredSize(new java.awt.Dimension(381, 291));
-        jPanel2.add(tipologia, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 462, 400, 300));
+        jPanel2.add(tipologia, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 510, 381, 291));
 
         senalizacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         senalizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton4.png"))); // NOI18N
         senalizacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(senalizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(517, 440, 517, 440));
+        jPanel2.add(senalizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 510, 380, 291));
 
         rescate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         rescate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton5.png"))); // NOI18N
         rescate.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(rescate, new org.netbeans.lib.awtextra.AbsoluteConstraints(1034, 440, 517, 440));
+        jPanel2.add(rescate, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 510, 381, 291));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
