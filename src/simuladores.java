@@ -21,8 +21,7 @@ public class simuladores extends javax.swing.JPanel {
      */
     public simuladores() {
         initComponents();
-        
-        JLabel[] miniaturas = new JLabel[]{embarque,protocolo,maniobras,tipologia,senalizacion,rescate};
+            JLabel[] miniaturas = new JLabel[]{embarque,protocolo,maniobras,tipologia,senalizacion,rescate};
         
         
         for(int i = 0; i < 5; i++){
@@ -37,7 +36,9 @@ public class simuladores extends javax.swing.JPanel {
             final int index = i;
             mouseListeners[i] = new MouseListener() {
                 @Override
-                public void mouseClicked(MouseEvent e) {}
+                public void mouseClicked(MouseEvent e) {
+                    
+                }
 
                 @Override
                 public void mousePressed(MouseEvent e) {}
