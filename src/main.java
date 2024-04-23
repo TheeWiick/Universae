@@ -29,7 +29,7 @@ public class main extends javax.swing.JFrame {
         content.add(sim, BorderLayout.CENTER);
         content.revalidate();
         content.repaint();
-        
+     
         
         this.setLocationRelativeTo(this);
         JLabel[] escudos = new JLabel[]{ico0, ico1, ico2, ico3, ico4, ico5, ico6, ico7, ico8, ico9, ico10, ico11, ico12, ico13};
@@ -67,9 +67,19 @@ public class main extends javax.swing.JFrame {
                 }
             };
             escudos[i].addMouseListener(mouseListeners[i]);
-        }
+        }   
     }
 
+        public void colocarLauncher(){
+            launcher laun = new launcher();
+            laun.setSize(1552, 880);
+            laun.setLocation(0,0);
+            content.removeAll();
+            content.add(laun, BorderLayout.CENTER);
+            content.revalidate();
+            content.repaint();
+        }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

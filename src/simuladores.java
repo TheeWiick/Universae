@@ -92,7 +92,7 @@ public class simuladores extends javax.swing.JPanel {
                 embarqueMouseClicked(evt);
             }
         });
-        jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 381, 291));
+        jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 430, 320));
 
         protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         protocolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
@@ -135,8 +135,7 @@ public class simuladores extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void embarqueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseClicked
-             
-        
+        //main.colocarLauncher();
     }//GEN-LAST:event_embarqueMouseClicked
 
 
