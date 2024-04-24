@@ -42,7 +42,7 @@ public class launcher extends javax.swing.JPanel {
         comenzar = new javax.swing.JLabel();
         barrita = new javax.swing.JLabel();
         titulo = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        texto = new javax.swing.JLabel();
 
         jPanel2.setBackground(new java.awt.Color(10, 38, 72));
         jPanel2.setMinimumSize(new java.awt.Dimension(1481, 801));
@@ -100,11 +100,11 @@ public class launcher extends javax.swing.JPanel {
         titulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jPanel2.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, -1, 30));
 
-        jLabel1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("<html>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br>\nUt enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>\n<br>\nQuis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>\n Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</html>");
-        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 660, -1, -1));
+        texto.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        texto.setForeground(new java.awt.Color(255, 255, 255));
+        texto.setText("<html>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br>\nUt enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>\n<br>\nQuis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>\n Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</html>");
+        texto.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 660, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -126,7 +126,6 @@ public class launcher extends javax.swing.JPanel {
     private javax.swing.JLabel fondo1;
     private javax.swing.JLabel fondo2;
     private javax.swing.JLabel imgprincipal;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel p1;
     private javax.swing.JLabel p2;
@@ -134,6 +133,7 @@ public class launcher extends javax.swing.JPanel {
     private javax.swing.JLabel p4;
     private javax.swing.JLabel p5;
     private javax.swing.JLabel siguiente;
+    private javax.swing.JLabel texto;
     private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
 }

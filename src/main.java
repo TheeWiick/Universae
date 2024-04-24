@@ -49,7 +49,7 @@ public class main extends javax.swing.JFrame {
             mouseListeners[i] = new MouseListener() {
                 @Override
                 public void mouseClicked(MouseEvent e) {}
-
+                    
                 @Override
                 public void mousePressed(MouseEvent e) {}
 
@@ -202,6 +202,11 @@ public class main extends javax.swing.JFrame {
         ico12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton12.png"))); // NOI18N
         ico12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ico12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ico12MouseClicked(evt);
+            }
+        });
         jPanel1.add(ico12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 10, 103, 111));
 
         ico13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -229,6 +234,17 @@ public class main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void ico12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ico12MouseClicked
+        simuladores sim = new simuladores();
+        sim.setSize(1552, 880);
+        sim.setLocation(0,0);
+        sim.parent = this;
+        content.removeAll();
+        content.add(sim, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_ico12MouseClicked
 
     /**
      * @param args the command line arguments

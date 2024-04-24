@@ -1,0 +1,411 @@
+{
+  "14_grados": [
+    {
+      "grado": "Transporte y mantenimiento de vehiculos",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Administracion y gestion",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Instituto internacional de ciberseguridad",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Comercio y marketing",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Edificacion y obra civil",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Electricidad y electronica",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Hosteleria y turismo",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Imagen personal",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Imagen y sonido",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Informatica y comunicaciones",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Quimica",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Sanidad",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Seguridad y medioambiente",
+      "simuladores": [
+        {
+          "titulo": "Ascensor",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Embarque",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "EPIS",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Extincion",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Helicoptero",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Hemorragia",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    },
+    {
+      "grado": "Servicios socioculturales y a la comunidad",
+      "simuladores": [
+        {
+          "titulo": "Simulador 1",
+          "descripcion": "Descripción del Simulador 1"
+        },
+        {
+          "titulo": "Simulador 2",
+          "descripcion": "Descripción del Simulador 2"
+        },
+        {
+          "titulo": "Simulador 3",
+          "descripcion": "Descripción del Simulador 3"
+        },
+        {
+          "titulo": "Simulador 4",
+          "descripcion": "Descripción del Simulador 4"
+        },
+        {
+          "titulo": "Simulador 5",
+          "descripcion": "Descripción del Simulador 5"
+        },
+        {
+          "titulo": "Simulador 6",
+          "descripcion": "Descripción del Simulador 6"
+        }
+      ]
+    }
+  ]
+}
+
