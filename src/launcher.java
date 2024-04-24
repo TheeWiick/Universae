@@ -29,95 +29,82 @@ public class launcher extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
+        imgprincipal = new javax.swing.JLabel();
+        fondo1 = new javax.swing.JLabel();
+        fondo2 = new javax.swing.JLabel();
+        anterior = new javax.swing.JLabel();
+        siguiente = new javax.swing.JLabel();
+        p1 = new javax.swing.JLabel();
+        p2 = new javax.swing.JLabel();
+        p3 = new javax.swing.JLabel();
+        p4 = new javax.swing.JLabel();
+        p5 = new javax.swing.JLabel();
+        comenzar = new javax.swing.JLabel();
+        barrita = new javax.swing.JLabel();
+        titulo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        siguiente = new javax.swing.JButton();
-        anterior = new javax.swing.JButton();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
-        jRadioButton5 = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
 
         jPanel2.setBackground(new java.awt.Color(10, 38, 72));
         jPanel2.setMinimumSize(new java.awt.Dimension(1481, 801));
         jPanel2.setPreferredSize(new java.awt.Dimension(1481, 801));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fotos launcher/Embarque/Embarque0.png"))); // NOI18N
-        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 20, 880, 480));
+        imgprincipal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        imgprincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fotos launcher/Embarque/Embarque0.png"))); // NOI18N
+        imgprincipal.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(imgprincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 20, 880, 480));
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/Cuadrado fondo enfocado.png"))); // NOI18N
-        jLabel3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 780, 463));
+        fondo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        fondo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/Cuadrado fondo enfocado.png"))); // NOI18N
+        fondo1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(fondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, 780, 463));
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/Cuadrado fondo enfocado.png"))); // NOI18N
-        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 20, 780, 463));
+        fondo2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        fondo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/Cuadrado fondo enfocado.png"))); // NOI18N
+        fondo2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(fondo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 20, 780, 463));
 
-        siguiente.setBackground(new java.awt.Color(10, 38, 72));
-        siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/Flecha derecha.png"))); // NOI18N
-        siguiente.setBorder(null);
-        siguiente.setBorderPainted(false);
-        jPanel2.add(siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(1250, 260, -1, -1));
-
-        anterior.setBackground(new java.awt.Color(10, 38, 72));
         anterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/Flecha izquierda.png"))); // NOI18N
-        anterior.setBorder(null);
-        anterior.setBorderPainted(false);
         anterior.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(anterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 250, -1, -1));
+        jPanel2.add(anterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, -1, -1));
 
-        jRadioButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/PuntoCarruselFilled.png"))); // NOI18N
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 510, -1, -1));
+        siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/Flecha derecha.png"))); // NOI18N
+        siguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 250, -1, -1));
 
-        jRadioButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/PuntoCarruselEmpty.png"))); // NOI18N
-        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton2ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 510, -1, -1));
+        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselFilled.png"))); // NOI18N
+        jPanel2.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, -1, 20));
 
-        jRadioButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/PuntoCarruselEmpty.png"))); // NOI18N
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 510, -1, -1));
+        p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
+        jPanel2.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 510, -1, 20));
 
-        jRadioButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/PuntoCarruselEmpty.png"))); // NOI18N
-        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton4ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 510, -1, -1));
+        p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
+        jPanel2.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 510, -1, 20));
 
-        jRadioButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/PuntoCarruselEmpty.png"))); // NOI18N
-        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton5ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 510, -1, -1));
+        p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
+        jPanel2.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 510, -1, 20));
 
-        jButton1.setBackground(new java.awt.Color(10, 38, 72));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/Comenzar.png"))); // NOI18N
-        jButton1.setBorder(null);
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 720, 253, 44));
+        p5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
+        jPanel2.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 510, -1, 20));
+
+        comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/Comenzar.png"))); // NOI18N
+        comenzar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 730, -1, -1));
+
+        barrita.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/Barrita aislada descripción.png"))); // NOI18N
+        jPanel2.add(barrita, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 580, -1, -1));
+
+        titulo.setFont(new java.awt.Font("Roboto Black", 1, 18)); // NOI18N
+        titulo.setForeground(new java.awt.Color(255, 255, 255));
+        titulo.setText("Embarque y desembarque en helicoptero");
+        titulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 580, -1, 30));
+
+        jLabel1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("<html>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.<br>\nUt enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.<br>\n<br>\nQuis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>\n Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</html>");
+        jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 660, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -131,39 +118,22 @@ public class launcher extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
-
-    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton2ActionPerformed
-
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
-
-    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton4ActionPerformed
-
-    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton5ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton anterior;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel anterior;
+    private javax.swing.JLabel barrita;
+    private javax.swing.JLabel comenzar;
+    private javax.swing.JLabel fondo1;
+    private javax.swing.JLabel fondo2;
+    private javax.swing.JLabel imgprincipal;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
-    private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JButton siguiente;
+    private javax.swing.JLabel p1;
+    private javax.swing.JLabel p2;
+    private javax.swing.JLabel p3;
+    private javax.swing.JLabel p4;
+    private javax.swing.JLabel p5;
+    private javax.swing.JLabel siguiente;
+    private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
 }
