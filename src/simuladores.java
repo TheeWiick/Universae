@@ -1,4 +1,5 @@
 
+import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -15,10 +16,9 @@ import javax.swing.JLabel;
  * @author Wick
  */
 public class simuladores extends javax.swing.JPanel {
-
-    /**
-     * Creates new form simu
-     */
+        
+    public main parent;
+    
     public simuladores() {
         initComponents();
             JLabel[] miniaturas = new JLabel[]{embarque,protocolo,maniobras,tipologia,senalizacion,rescate};
@@ -37,7 +37,8 @@ public class simuladores extends javax.swing.JPanel {
             mouseListeners[i] = new MouseListener() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                    
+                    launcher laun = parent.crearLauncher();
+                    parent.paintLauncher(laun);
                 }
 
                 @Override
@@ -87,12 +88,7 @@ public class simuladores extends javax.swing.JPanel {
         embarque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton0.png"))); // NOI18N
         embarque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         embarque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        embarque.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                embarqueMouseClicked(evt);
-            }
-        });
-        jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 430, 320));
+        jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 80, 380, 291));
 
         protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         protocolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
@@ -133,10 +129,6 @@ public class simuladores extends javax.swing.JPanel {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
-
-    private void embarqueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseClicked
-        //main.colocarLauncher();
-    }//GEN-LAST:event_embarqueMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

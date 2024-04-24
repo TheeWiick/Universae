@@ -117,7 +117,6 @@ public class launcher extends javax.swing.JPanel {
         jButton1.setBackground(new java.awt.Color(10, 38, 72));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/Comenzar.png"))); // NOI18N
         jButton1.setBorder(null);
-        jButton1.setPreferredSize(new java.awt.Dimension(253, 44));
         jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 720, 253, 44));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
