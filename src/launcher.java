@@ -18,7 +18,22 @@ public class launcher extends javax.swing.JPanel {
     public launcher() {
         initComponents();
     }
-
+    
+    public void sumar(){
+        int index = 0;
+            index++;
+        if(index>4);
+            index = 0;
+            utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/Embarque" + index + ".png");
+    }
+        public void restar(){
+        int index = 0;
+            index--;
+        if(index<0);
+            index = 0;
+            utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/Embarque" + index + ".png");
+            utilidades.SetImageLabel(p1, "src/PuntoCarruseluntoCarruselFilled" + index + ".png");
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
