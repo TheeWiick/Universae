@@ -26,7 +26,7 @@ public class simuladores extends javax.swing.JPanel {
         
         for(int i = 0; i < 5; i++){
             String ruta = "src/miniaturas simuladores/HomeButton" + i + ".png";
-            utilidades.SetImageLabel(miniaturas[i], "src/miniaturas simuladores/HomeButton" + (i + 0) + ".png", new Dimension (381, 291));
+            utilidades.SetImageLabel(miniaturas[i], "src/miniaturas simuladores/HomeButton" + (i + 0) + ".png", new Dimension (376, 286));
         }
         
         ImageIcon[] icons = new ImageIcon[6];
@@ -49,13 +49,14 @@ public class simuladores extends javax.swing.JPanel {
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                    Dimension dimension = new Dimension (-5, -5);
+                    Dimension dimension = new Dimension (5, 5);
                     utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
                 }
 
                 @Override
                 public void mouseExited(MouseEvent e) {
-                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png");
+                    Dimension dimension = new Dimension (-5, -5);
+                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
                 }
             };
             miniaturas[i].addMouseListener(mouseListeners[i]);

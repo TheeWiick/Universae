@@ -1,5 +1,6 @@
 
-import java.awt.BorderLayout;
+import java.awt.Dimension;
+import javax.swing.JLabel;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -12,28 +13,52 @@ import java.awt.BorderLayout;
  */
 public class launcher extends javax.swing.JPanel {
 
-    /**
-     * Creates new form launcher
-     */
+JLabel[] puntosLabel;
+Dimension dimension;
     public launcher() {
         initComponents();
+        puntosLabel = new JLabel[]{p0, p1, p2, p3, p4};
+
+        dimension = new Dimension (16, 17);
+        for (int i = 0; i < puntosLabel.length; i++) {
+            utilidades.SetImageLabel(puntosLabel[i], "src/botones/PuntoCarruselEmpty.png", dimension);
+        }
+        utilidades.SetImageLabel(puntosLabel[0], "src/botones/PuntoCarruselFilled.png", dimension);
+
     }
     
-    public void sumar(){
-        int index = 0;
-            index++;
-        if(index>4);
-            index = 0;
-            utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/Embarque" + index + ".png");
+    public void actualizarPuntos(){
+        for (int i = 0; i < puntosLabel.length; i++){
+            if (index == i){
+                utilidades.SetImageLabel(puntosLabel[i], "src/botones/PuntoCarruselFilled.png");
+            }
+            else {
+                utilidades.SetImageLabel(puntosLabel[i], "src/botones/PuntoCarruselEmpty.png");                
+            }
+        }
     }
-        public void restar(){
-        int index = 0;
-            index--;
-        if(index<0);
+    
+    public int index = 0;
+
+    public void sumar() {
+        index++;
+        if (index > 4) {
             index = 0;
-            utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/Embarque" + index + ".png");
-            utilidades.SetImageLabel(p1, "src/PuntoCarruseluntoCarruselFilled" + index + ".png");
+        }
+        utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/Embarque/Embarque" + index + ".png");
+        actualizarPuntos();
     }
+
+    public void restar() {
+        index--;
+        if (index < 0) {
+            index = 4;
+        }
+        utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/Embarque/Embarque" + index + ".png");
+        actualizarPuntos();
+    }
+
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -49,11 +74,11 @@ public class launcher extends javax.swing.JPanel {
         fondo2 = new javax.swing.JLabel();
         anterior = new javax.swing.JLabel();
         siguiente = new javax.swing.JLabel();
+        p0 = new javax.swing.JLabel();
         p1 = new javax.swing.JLabel();
         p2 = new javax.swing.JLabel();
         p3 = new javax.swing.JLabel();
         p4 = new javax.swing.JLabel();
-        p5 = new javax.swing.JLabel();
         comenzar = new javax.swing.JLabel();
         barrita = new javax.swing.JLabel();
         titulo = new javax.swing.JLabel();
@@ -81,26 +106,39 @@ public class launcher extends javax.swing.JPanel {
 
         anterior.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utilidades/Flecha izquierda.png"))); // NOI18N
         anterior.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        anterior.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                anteriorMouseClicked(evt);
+            }
+        });
         jPanel2.add(anterior, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, -1, -1));
 
         siguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/Flecha derecha.png"))); // NOI18N
         siguiente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        siguiente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                siguienteMouseClicked(evt);
+            }
+        });
         jPanel2.add(siguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 250, -1, -1));
 
-        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselFilled.png"))); // NOI18N
-        jPanel2.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, -1, 20));
+        p0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselFilled.png"))); // NOI18N
+        p0.setMaximumSize(new java.awt.Dimension(16, 17));
+        p0.setMinimumSize(new java.awt.Dimension(16, 17));
+        p0.setPreferredSize(new java.awt.Dimension(16, 17));
+        jPanel2.add(p0, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, 16, 17));
+
+        p1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
+        jPanel2.add(p1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 510, 16, 17));
 
         p2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
-        jPanel2.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 510, -1, 20));
+        jPanel2.add(p2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 510, 16, 17));
 
         p3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
-        jPanel2.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 510, -1, 20));
+        jPanel2.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 510, 16, 17));
 
         p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
-        jPanel2.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 510, -1, 20));
-
-        p5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
-        jPanel2.add(p5, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 510, -1, 20));
+        jPanel2.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 510, -1, 20));
 
         comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/Comenzar.png"))); // NOI18N
         comenzar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -133,6 +171,14 @@ public class launcher extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void siguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siguienteMouseClicked
+        sumar();
+    }//GEN-LAST:event_siguienteMouseClicked
+
+    private void anteriorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_anteriorMouseClicked
+        restar();
+    }//GEN-LAST:event_anteriorMouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel anterior;
@@ -142,11 +188,11 @@ public class launcher extends javax.swing.JPanel {
     private javax.swing.JLabel fondo2;
     private javax.swing.JLabel imgprincipal;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel p0;
     private javax.swing.JLabel p1;
     private javax.swing.JLabel p2;
     private javax.swing.JLabel p3;
     private javax.swing.JLabel p4;
-    private javax.swing.JLabel p5;
     private javax.swing.JLabel siguiente;
     private javax.swing.JLabel texto;
     private javax.swing.JLabel titulo;
