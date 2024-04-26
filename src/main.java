@@ -51,10 +51,16 @@ public class main extends javax.swing.JFrame {
                 public void mouseClicked(MouseEvent e) {}
                     
                 @Override
-                public void mousePressed(MouseEvent e) {}
+                public void mousePressed(MouseEvent e) {
+                Dimension dimension = new Dimension (-5, -5);
+                utilidades.SetImageLabel(escudos[index], "src/iconos/LauncherButton" + index + ".png", dimension);
+                }
 
                 @Override
-                public void mouseReleased(MouseEvent e) {}
+                public void mouseReleased(MouseEvent e) {
+                Dimension dimension = new Dimension (5, 5);
+                utilidades.SetImageLabel(escudos[index], "src/iconos/LauncherButton" + index + ".png", dimension);
+                }
 
                 @Override
                 public void mouseEntered(MouseEvent e) {

@@ -42,10 +42,16 @@ public class simuladores extends javax.swing.JPanel {
                 }
 
                 @Override
-                public void mousePressed(MouseEvent e) {}
+                public void mousePressed(MouseEvent e) {
+                    Dimension dimension = new Dimension (-5, -5);
+                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
+                }
 
                 @Override
-                public void mouseReleased(MouseEvent e) {}
+                public void mouseReleased(MouseEvent e) {
+                    Dimension dimension = new Dimension (5, 5);
+                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
+                }
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
