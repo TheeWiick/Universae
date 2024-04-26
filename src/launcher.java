@@ -138,7 +138,7 @@ Dimension dimension;
         jPanel2.add(p3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 510, 16, 17));
 
         p4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/PuntoCarruselEmpty.png"))); // NOI18N
-        jPanel2.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 510, -1, 20));
+        jPanel2.add(p4, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 510, 16, 17));
 
         comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/botones/Comenzar.png"))); // NOI18N
         comenzar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
