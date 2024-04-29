@@ -2,6 +2,9 @@ import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -20,8 +23,7 @@ public class main extends javax.swing.JFrame {
      * Creates new form main
      */
     public main() {
-        initComponents();     
-        
+        initComponents();
         simuladores sim = new simuladores();
         sim.setSize(1552, 880);
         sim.setLocation(0,0);
@@ -30,8 +32,8 @@ public class main extends javax.swing.JFrame {
         content.add(sim, BorderLayout.CENTER);
         content.revalidate();
         content.repaint();
-     
-        
+    
+
         this.setLocationRelativeTo(this);
         JLabel[] escudos = new JLabel[]{ico0, ico1, ico2, ico3, ico4, ico5, ico6, ico7, ico8, ico9, ico10, ico11, ico12, ico13};
         
@@ -76,7 +78,8 @@ public class main extends javax.swing.JFrame {
             escudos[i].addMouseListener(mouseListeners[i]);
         }   
     }
-
+    
+    
         public launcher crearLauncher(){
             launcher laun = new launcher();
             laun.setSize(1552, 880);
@@ -91,7 +94,7 @@ public class main extends javax.swing.JFrame {
             content.repaint();
         }
         
-    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -282,7 +285,8 @@ public class main extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new main().setVisible(true);
+                
+                    new main().setVisible(true);
             }
         });
     }

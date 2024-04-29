@@ -16,6 +16,10 @@ import javax.swing.JLabel;
  * @author Wick
  */
 public class simuladores extends javax.swing.JPanel {
+
+    static String getString(String titulo) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
         
     public main parent;
     

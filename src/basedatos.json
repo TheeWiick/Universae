@@ -1,7 +1,7 @@
 {
-  "14_grados": [
+  "grados": [
     {
-      "grado": "Transporte y mantenimiento de vehiculos",
+      "grado": "grado 1",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "grado": "Administracion y gestion",
+      "grado": "grado 2",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "grado": "Instituto internacional de ciberseguridad",
+      "grado": "grado 3",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "grado": "Comercio y marketing",
+      "grado": "grado 4",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -165,7 +165,7 @@
       ]
     },
     {
-      "grado": "Edificacion y obra civil",
+      "grado": "grado 5",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -206,7 +206,7 @@
       ]
     },
     {
-      "grado": "Electricidad y electronica",
+      "grado": "grado 6",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -247,7 +247,7 @@
       ]
     },
     {
-      "grado": "Hosteleria y turismo",
+      "grado": "grado 7",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -288,7 +288,7 @@
       ]
     },
     {
-      "grado": "Imagen personal",
+      "grado": "grado 8",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "grado": "Imagen y sonido",
+      "grado": "grado 9",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -370,7 +370,7 @@
       ]
     },
     {
-      "grado": "Informatica y comunicaciones",
+      "grado": "grado 10",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -411,7 +411,7 @@
       ]
     },
     {
-      "grado": "Quimica",
+      "grado": "grado 11",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -452,7 +452,7 @@
       ]
     },
     {
-      "grado": "Sanidad",
+      "grado": "grado 12",
       "simuladores": [
         {
           "titulo": "Simulador 1",
@@ -493,7 +493,7 @@
       ]
     },
     {
-      "grado": "Seguridad y medioambiente",
+      "grado": "grado 13",
       "simuladores": [
         {
           "titulo": "Ascensor",
@@ -534,7 +534,7 @@
       ]
     },
     {
-      "grado": "Servicios socioculturales y a la comunidad",
+      "grado": "grado 14",
       "simuladores": [
         {
           "titulo": "Simulador 1",
