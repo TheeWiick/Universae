@@ -74,6 +74,27 @@ import org.json.JSONObject;
             return "Error al leer el archivo JSON";
             }
         }
+    
+    public static String ImagenSimulador(int indexGrado, int indexSimulador) throws FileNotFoundException, IOException {
+        try {
+            JSONObject simulador = new JSONObject (LeerJSON()).getJSONArray("grados").getJSONObject(indexGrado).getJSONArray("simuladores").getJSONObject(indexSimulador);
+
+            return simulador.getString("imagen");
+        } catch (JSONException e) {
+
+            return "Error al leer el archivo JSON";
+            }
+        }
+    public static String DescripcionSimulador(int indexGrado, int indexSimulador) throws FileNotFoundException, IOException {
+        try {
+            JSONObject simulador = new JSONObject (LeerJSON()).getJSONArray("grados").getJSONObject(indexGrado).getJSONArray("simuladores").getJSONObject(indexSimulador);
+
+            return simulador.getString("descripcion");
+        } catch (JSONException e) {
+
+            return "Error al leer el archivo JSON";
+            }
+        }
 }
 
 
