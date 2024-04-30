@@ -80,7 +80,7 @@ public class main extends javax.swing.JFrame {
     }
     
     
-        public launcher crearLauncher(){
+        public launcher crearLauncher() throws IOException{
             launcher laun = new launcher();
             laun.setSize(1552, 880);
             laun.setLocation(0,0);

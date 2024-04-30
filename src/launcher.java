@@ -1,5 +1,8 @@
 
 import java.awt.Dimension;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JLabel;
 
 /*
@@ -15,8 +18,17 @@ public class launcher extends javax.swing.JPanel {
 
 JLabel[] puntosLabel;
 Dimension dimension;
-    public launcher() {
+Dimension dimension2;
+public int grado;
+public int simulador;
+
+
+
+    public launcher() throws IOException {
         initComponents();
+        
+        
+        
         puntosLabel = new JLabel[]{p0, p1, p2, p3, p4};
 
         dimension = new Dimension (16, 17);
@@ -24,7 +36,9 @@ Dimension dimension;
             utilidades.SetImageLabel(puntosLabel[i], "src/botones/PuntoCarruselEmpty.png", dimension);
         }
         utilidades.SetImageLabel(puntosLabel[0], "src/botones/PuntoCarruselFilled.png", dimension);
-
+        
+        dimension2 = new Dimension (891, 525);
+utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/"+utilidades.ImagenSimulador(grado,simulador)+"/" +utilidades.ImagenSimulador(grado,simulador)+ index + ".png",dimension2);
     }
     
     public void actualizarPuntos(){
@@ -40,21 +54,22 @@ Dimension dimension;
     
     public int index = 0;
 
-    public void sumar() {
+    public void sumar() throws IOException {
         index++;
         if (index > 4) {
             index = 0;
         }
-        utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/Embarque/Embarque" + index + ".png");
+        utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/"+utilidades.ImagenSimulador(grado,simulador)+"/" +utilidades.ImagenSimulador(grado,simulador)+ index + ".png");
         actualizarPuntos();
+        
     }
 
-    public void restar() {
+    public void restar() throws IOException {
         index--;
         if (index < 0) {
             index = 4;
         }
-        utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/Embarque/Embarque" + index + ".png");
+         utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/"+utilidades.ImagenSimulador(grado ,simulador)+"/" +utilidades.ImagenSimulador(grado,simulador)+ index + ".png");
         actualizarPuntos();
     }
 
@@ -172,11 +187,19 @@ Dimension dimension;
     }// </editor-fold>//GEN-END:initComponents
 
     private void siguienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_siguienteMouseClicked
+    try {
         sumar();
+    } catch (IOException ex) {
+        Logger.getLogger(launcher.class.getName()).log(Level.SEVERE, null, ex);
+    }
     }//GEN-LAST:event_siguienteMouseClicked
 
     private void anteriorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_anteriorMouseClicked
+    try {
         restar();
+    } catch (IOException ex) {
+        Logger.getLogger(launcher.class.getName()).log(Level.SEVERE, null, ex);
+    }
     }//GEN-LAST:event_anteriorMouseClicked
 
 

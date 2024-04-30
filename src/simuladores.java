@@ -3,6 +3,9 @@ import java.awt.Cursor;
 import java.awt.Dimension;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
@@ -41,8 +44,8 @@ public class simuladores extends javax.swing.JPanel {
             mouseListeners[i] = new MouseListener() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
-                    launcher laun = parent.crearLauncher();
-                    parent.paintLauncher(laun);
+//                    launcher laun = parent.crearLauncher();
+//                    parent.paintLauncher(laun);
                 }
 
                 @Override
@@ -99,11 +102,21 @@ public class simuladores extends javax.swing.JPanel {
         embarque.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton0.png"))); // NOI18N
         embarque.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         embarque.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        embarque.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                embarqueMouseClicked(evt);
+            }
+        });
         jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 380, 291));
 
         protocolo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         protocolo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton1.png"))); // NOI18N
         protocolo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        protocolo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                protocoloMouseClicked(evt);
+            }
+        });
         jPanel2.add(protocolo, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 60, 380, 291));
 
         maniobras.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -143,6 +156,33 @@ public class simuladores extends javax.swing.JPanel {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
+
+    private void embarqueMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseClicked
+   launcher laun;
+        try {
+            laun = parent.crearLauncher();
+            laun.grado=0;
+           laun.simulador=0;
+                    parent.paintLauncher(laun);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+           // TODO add your handling code here:
+    }//GEN-LAST:event_embarqueMouseClicked
+
+    private void protocoloMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_protocoloMouseClicked
+        launcher laun;
+        try {           
+            laun = parent.crearLauncher();
+            laun.grado=0;
+           laun.simulador=1;
+                    parent.paintLauncher(laun);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+   
+                    //
+    }//GEN-LAST:event_protocoloMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

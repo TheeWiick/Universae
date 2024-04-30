@@ -5,37 +5,37 @@
       "simuladores": [
         {
           "titulo": "Simulador 1",
-          "imagen":"",
+          "imagen":"Embarque",
           "ruta":"",
           "descripcion": "Descripción del Simulador 1"
         },
         {
           "titulo": "Simulador 2",
-          "imagen":"",
+          "imagen":"Hemorragia",
           "ruta":"",
           "descripcion": "Descripción del Simulador 2"
         },
         {
           "titulo": "Simulador 3",
-          "imagen":"",
+          "imagen":"Maniobra",
           "ruta":"",
           "descripcion": "Descripción del Simulador 3"
         },
         {
           "titulo": "Simulador 4",
-          "imagen":"",
+          "imagen":"EPIS",
           "ruta":"",
           "descripcion": "Descripción del Simulador 4"
         },
         {
           "titulo": "Simulador 5",
-          "imagen":"",
+          "imagen":"Helicoptero",
           "ruta":"",
           "descripcion": "Descripción del Simulador 5"
         },
         {
           "titulo": "Simulador 6",
-          "imagen":"",
+          "imagen":"Ascensor",
           "ruta":"",
           "descripcion": "Descripción del Simulador 6"
         }
