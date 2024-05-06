@@ -41,44 +41,44 @@ public class simuladores extends javax.swing.JPanel {
             utilidades.SetImageLabel(miniaturas[i], utilidades.MiniaturaSimulador(idgrado, i), new Dimension (370, 280));
         }
         
-        ImageIcon[] icons = new ImageIcon[6];
-        MouseListener[] mouseListeners = new MouseListener[6];
-        for (int i = 0; i < icons.length; i++) {
-            icons[i] = new ImageIcon("src/miniaturas simuladores/HomeButton" + i + ".png");
-            final int index = i;
-            mouseListeners[i] = new MouseListener() {
-                @Override
-                public void mouseClicked(MouseEvent e) {}
-
-                @Override
-                public void mousePressed(MouseEvent e) {
-                    Dimension dimension = new Dimension (-10, -10);
-                    try {
-                        utilidades.SetImageLabel(miniaturas[index], utilidades.MiniaturaSimulador(idgrado, 1), dimension);
-                    } catch (IOException ex) {
-                        Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-                }
-
-                @Override
-                public void mouseReleased(MouseEvent e) {
-                    Dimension dimension = new Dimension (-5, -5);
-                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
-                }
-
-                @Override
-                public void mouseEntered(MouseEvent e) {
-
-                }
-
-                @Override
-                public void mouseExited(MouseEvent e) {
-                    Dimension dimension = new Dimension (-10, -10);
-                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
-                }
-            };
-            miniaturas[i].addMouseListener(mouseListeners[i]);
-        }
+//        ImageIcon[] icons = new ImageIcon[6];
+//        MouseListener[] mouseListeners = new MouseListener[6];
+//        for (int i = 0; i < icons.length; i++) {
+//            icons[i] = new ImageIcon("src/miniaturas simuladores/HomeButton" + i + ".png");
+//            final int index = i;
+//            mouseListeners[i] = new MouseListener() {
+//                @Override
+//                public void mouseClicked(MouseEvent e) {}
+//
+//                @Override
+//                public void mousePressed(MouseEvent e) {
+//                    Dimension dimension = new Dimension (-10, -10);
+//                    try {
+//                        utilidades.SetImageLabel(miniaturas[index], utilidades.MiniaturaSimulador(idgrado, 1), dimension);
+//                    } catch (IOException ex) {
+//                        Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+//                    }
+//                }
+//
+//                @Override
+//                public void mouseReleased(MouseEvent e) {
+//                    Dimension dimension = new Dimension (-5, -5);
+//                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
+//                }
+//
+//                @Override
+//                public void mouseEntered(MouseEvent e) {
+//
+//                }
+//
+//                @Override
+//                public void mouseExited(MouseEvent e) {
+//                    Dimension dimension = new Dimension (-10, -10);
+//                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
+//                }
+//            };
+//            miniaturas[i].addMouseListener(mouseListeners[i]);
+//        }
     }
     
     /**
@@ -277,8 +277,12 @@ public class simuladores extends javax.swing.JPanel {
     }//GEN-LAST:event_embarqueMouseEntered
 
     private void embarqueMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseExited
-        // TODO add your handling code here:
-    }//GEN-LAST:event_embarqueMouseExited
+        Dimension dimension = new Dimension (-10, -10);
+        try {
+            utilidades.SetImageLabel(embarque,utilidades.MiniaturaSimulador(idgrado, 0), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }    }//GEN-LAST:event_embarqueMouseExited
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
