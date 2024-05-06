@@ -6,36 +6,42 @@
         {
           "titulo": "Simulador 1",
           "imagen":"Embarque",
+          "miniatura":"src/miniaturas simuladores/HomeButton0.png",          
           "ruta":"",
           "descripcion": "Descripción del Simulador 1"
         },
         {
           "titulo": "Simulador 2",
           "imagen":"Hemorragia",
+          "miniatura":"src/miniaturas simuladores/HomeButton1.png",  
           "ruta":"",
           "descripcion": "Descripción del Simulador 2"
         },
         {
           "titulo": "Simulador 3",
-          "imagen":"Maniobra",
+          "imagen":"Extincion",
+          "miniatura":"src/miniaturas simuladores/HomeButton2.png",  
           "ruta":"",
           "descripcion": "Descripción del Simulador 3"
         },
         {
           "titulo": "Simulador 4",
           "imagen":"EPIS",
+          "miniatura":"src/miniaturas simuladores/HomeButton3.png",                      
           "ruta":"",
           "descripcion": "Descripción del Simulador 4"
         },
         {
           "titulo": "Simulador 5",
           "imagen":"Helicoptero",
+          "miniatura":"src/miniaturas simuladores/HomeButton4.png",             
           "ruta":"",
           "descripcion": "Descripción del Simulador 5"
         },
         {
           "titulo": "Simulador 6",
           "imagen":"Ascensor",
+          "miniatura":"src/miniaturas simuladores/HomeButton5.png",  
           "ruta":"",
           "descripcion": "Descripción del Simulador 6"
         }
@@ -46,37 +52,43 @@
       "simuladores": [
         {
           "titulo": "Simulador 1",
-          "imagen":"",
+          "imagen":"Ascensor",
+          "miniatura":"src/miniaturas simuladores/HomeButton5.png",
           "ruta":"",
           "descripcion": "Descripción del Simulador 1"
         },
         {
           "titulo": "Simulador 2",
-          "imagen":"",
+          "imagen":"Helicoptero",
+          "miniatura":"src/miniaturas simuladores/HomeButton4.png",                    
           "ruta":"",
           "descripcion": "Descripción del Simulador 2"
         },
         {
           "titulo": "Simulador 3",
-          "imagen":"",
+          "imagen":"EPIS",
+          "miniatura":"src/miniaturas simuladores/HomeButton3.png",                    
           "ruta":"",
           "descripcion": "Descripción del Simulador 3"
         },
         {
           "titulo": "Simulador 4",
-          "imagen":"",
+          "imagen":"Extincion",
+          "miniatura":"src/miniaturas simuladores/HomeButton2.png",                    
           "ruta":"",
           "descripcion": "Descripción del Simulador 4"
         },
         {
           "titulo": "Simulador 5",
-          "imagen":"",
+          "imagen":"Hemorragia",
+          "miniatura":"src/miniaturas simuladores/HomeButton1.png",                    
           "ruta":"",
           "descripcion": "Descripción del Simulador 5"
         },
         {
           "titulo": "Simulador 6",
-          "imagen":"",
+          "imagen":"Embarque",
+          "miniatura":"src/miniaturas simuladores/HomeButton0.png",                    
           "ruta":"",
           "descripcion": "Descripción del Simulador 6"
         }

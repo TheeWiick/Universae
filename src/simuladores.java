@@ -26,14 +26,19 @@ public class simuladores extends javax.swing.JPanel {
         
     public main parent;
     
+    public int idgrado;
+    
     public simuladores() {
         initComponents();
-            JLabel[] miniaturas = new JLabel[]{embarque,protocolo,maniobras,tipologia,senalizacion,rescate};
+
+}
+
+    public void start() throws IOException{
+        JLabel[] miniaturas = new JLabel[]{embarque,protocolo,maniobras,tipologia,senalizacion,rescate};
         
         
         for(int i = 0; i < 6; i++){
-            String ruta = "src/miniaturas simuladores/HomeButton" + i + ".png";
-            utilidades.SetImageLabel(miniaturas[i], "src/miniaturas simuladores/HomeButton" + (i + 0) + ".png", new Dimension (370, 280));
+            utilidades.SetImageLabel(miniaturas[i], utilidades.MiniaturaSimulador(idgrado, i), new Dimension (370, 280));
         }
         
         ImageIcon[] icons = new ImageIcon[6];
@@ -43,15 +48,16 @@ public class simuladores extends javax.swing.JPanel {
             final int index = i;
             mouseListeners[i] = new MouseListener() {
                 @Override
-                public void mouseClicked(MouseEvent e) {
-//                    launcher laun = parent.crearLauncher();
-//                    parent.paintLauncher(laun);
-                }
+                public void mouseClicked(MouseEvent e) {}
 
                 @Override
                 public void mousePressed(MouseEvent e) {
                     Dimension dimension = new Dimension (-10, -10);
-                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
+                    try {
+                        utilidades.SetImageLabel(miniaturas[index], utilidades.MiniaturaSimulador(idgrado, 1), dimension);
+                    } catch (IOException ex) {
+                        Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
 
                 @Override
@@ -62,8 +68,7 @@ public class simuladores extends javax.swing.JPanel {
 
                 @Override
                 public void mouseEntered(MouseEvent e) {
-                    Dimension dimension = new Dimension (-5, -5);
-                    utilidades.SetImageLabel(miniaturas[index], "src/miniaturas simuladores/HomeButton" + index + ".png", dimension);
+
                 }
 
                 @Override
@@ -74,8 +79,8 @@ public class simuladores extends javax.swing.JPanel {
             };
             miniaturas[i].addMouseListener(mouseListeners[i]);
         }
-}
-
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -106,6 +111,9 @@ public class simuladores extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 embarqueMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                embarqueMouseEntered(evt);
+            }
         });
         jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 380, 291));
 
@@ -122,6 +130,11 @@ public class simuladores extends javax.swing.JPanel {
         maniobras.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         maniobras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton2.png"))); // NOI18N
         maniobras.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        maniobras.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                maniobrasMouseClicked(evt);
+            }
+        });
         jPanel2.add(maniobras, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 60, 381, 291));
 
         tipologia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -130,11 +143,21 @@ public class simuladores extends javax.swing.JPanel {
         tipologia.setMaximumSize(new java.awt.Dimension(381, 291));
         tipologia.setMinimumSize(new java.awt.Dimension(381, 291));
         tipologia.setPreferredSize(new java.awt.Dimension(381, 291));
+        tipologia.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tipologiaMouseClicked(evt);
+            }
+        });
         jPanel2.add(tipologia, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 490, 381, 291));
 
         senalizacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         senalizacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniaturas simuladores/HomeButton4.png"))); // NOI18N
         senalizacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        senalizacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                senalizacionMouseClicked(evt);
+            }
+        });
         jPanel2.add(senalizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 490, 380, 291));
 
         rescate.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -143,6 +166,11 @@ public class simuladores extends javax.swing.JPanel {
         rescate.setMaximumSize(new java.awt.Dimension(380, 291));
         rescate.setMinimumSize(new java.awt.Dimension(380, 291));
         rescate.setPreferredSize(new java.awt.Dimension(380, 290));
+        rescate.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                rescateMouseClicked(evt);
+            }
+        });
         jPanel2.add(rescate, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 490, 380, 291));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -162,12 +190,13 @@ public class simuladores extends javax.swing.JPanel {
         try {
             laun = parent.crearLauncher();
             laun.grado=0;
-           laun.simulador=0;
+            laun.simulador=0;
+            laun.start();
                     parent.paintLauncher(laun);
         } catch (IOException ex) {
             Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
         }
-           // TODO add your handling code here:
+
     }//GEN-LAST:event_embarqueMouseClicked
 
     private void protocoloMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_protocoloMouseClicked
@@ -175,14 +204,74 @@ public class simuladores extends javax.swing.JPanel {
         try {           
             laun = parent.crearLauncher();
             laun.grado=0;
-           laun.simulador=1;
+            laun.simulador=1;
+            laun.start();
                     parent.paintLauncher(laun);
         } catch (IOException ex) {
             Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
         }
-   
-                    //
     }//GEN-LAST:event_protocoloMouseClicked
+
+    private void maniobrasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maniobrasMouseClicked
+        launcher laun;
+        try {           
+            laun = parent.crearLauncher();
+            laun.grado=0;
+            laun.simulador=2;
+            laun.start();
+                    parent.paintLauncher(laun);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_maniobrasMouseClicked
+
+    private void tipologiaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tipologiaMouseClicked
+        launcher laun;
+        try {           
+            laun = parent.crearLauncher();
+            laun.grado=0;
+            laun.simulador=3;
+            laun.start();
+                    parent.paintLauncher(laun);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_tipologiaMouseClicked
+
+    private void senalizacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_senalizacionMouseClicked
+        launcher laun;
+        try {           
+            laun = parent.crearLauncher();
+            laun.grado=0;
+            laun.simulador=4;
+            laun.start();
+                    parent.paintLauncher(laun);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_senalizacionMouseClicked
+
+    private void rescateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rescateMouseClicked
+        launcher laun;
+        try {           
+            laun = parent.crearLauncher();
+            laun.grado=0;
+            laun.simulador=5;
+            laun.start();
+                    parent.paintLauncher(laun);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_rescateMouseClicked
+
+    private void embarqueMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseEntered
+        Dimension dimension = new Dimension (-5, -5);
+        try {
+            utilidades.SetImageLabel(embarque,utilidades.MiniaturaSimulador(idgrado, 0), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_embarqueMouseEntered
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

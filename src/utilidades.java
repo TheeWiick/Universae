@@ -95,6 +95,16 @@ import org.json.JSONObject;
             return "Error al leer el archivo JSON";
             }
         }
+    public static String MiniaturaSimulador(int indexGrado, int indexSimulador) throws FileNotFoundException, IOException {
+        try {
+            JSONObject simulador = new JSONObject (LeerJSON()).getJSONArray("grados").getJSONObject(indexGrado).getJSONArray("simuladores").getJSONObject(indexSimulador);
+
+            return simulador.getString("miniatura");
+        } catch (JSONException e) {
+
+            return "Error al leer el archivo JSON";
+            }
+        }    
 }
 
 

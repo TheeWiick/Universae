@@ -27,8 +27,9 @@ public int simulador;
     public launcher() throws IOException {
         initComponents();
         
-        
-        
+    }
+    
+    public void start() throws IOException{
         puntosLabel = new JLabel[]{p0, p1, p2, p3, p4};
 
         dimension = new Dimension (16, 17);
@@ -38,11 +39,13 @@ public int simulador;
         utilidades.SetImageLabel(puntosLabel[0], "src/botones/PuntoCarruselFilled.png", dimension);
         
         dimension2 = new Dimension (891, 525);
-utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/"+utilidades.ImagenSimulador(grado,simulador)+"/" +utilidades.ImagenSimulador(grado,simulador)+ index + ".png",dimension2);
+            utilidades.SetImageLabel(imgprincipal, "src/fotos launcher/"+utilidades.ImagenSimulador(grado,simulador)+"/" +utilidades.ImagenSimulador(grado,simulador)+ index + ".png",dimension2);
+            
+        utilidades.NombreSimulador(0, 1);
     }
     
     public void actualizarPuntos(){
-        for (int i = 0; i < puntosLabel.length; i++){
+        for (int i = 0; i < 5; i++){
             if (index == i){
                 utilidades.SetImageLabel(puntosLabel[i], "src/botones/PuntoCarruselFilled.png");
             }

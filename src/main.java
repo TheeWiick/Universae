@@ -22,9 +22,11 @@ public class main extends javax.swing.JFrame {
     /**
      * Creates new form main
      */
-    public main() {
+    public main() throws IOException {
         initComponents();
         simuladores sim = new simuladores();
+        sim.idgrado = 0;
+        sim.start();
         sim.setSize(1552, 880);
         sim.setLocation(0,0);
         sim.parent = this;
@@ -151,6 +153,11 @@ public class main extends javax.swing.JFrame {
         ico0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ico0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/LauncherButton0.png"))); // NOI18N
         ico0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ico0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ico0MouseClicked(evt);
+            }
+        });
         jPanel1.add(ico0);
 
         ico1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -246,6 +253,12 @@ public class main extends javax.swing.JFrame {
 
     private void ico12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ico12MouseClicked
         simuladores sim = new simuladores();
+        sim.idgrado = 1;
+        try {
+            sim.start();
+        } catch (IOException ex) {
+            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+        }        
         sim.setSize(1552, 880);
         sim.setLocation(0,0);
         sim.parent = this;
@@ -254,6 +267,23 @@ public class main extends javax.swing.JFrame {
         content.revalidate();
         content.repaint();
     }//GEN-LAST:event_ico12MouseClicked
+
+    private void ico0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ico0MouseClicked
+        simuladores sim = new simuladores();
+        sim.idgrado = 0;
+        try {
+            sim.start();
+        } catch (IOException ex) {
+            Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        sim.setSize(1552, 880);
+        sim.setLocation(0,0);
+        sim.parent = this;
+        content.removeAll();
+        content.add(sim, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_ico0MouseClicked
 
     /**
      * @param args the command line arguments
@@ -286,7 +316,11 @@ public class main extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 
+                try {
                     new main().setVisible(true);
+                } catch (IOException ex) {
+                    Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
         });
     }
