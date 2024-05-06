@@ -114,6 +114,9 @@ public class simuladores extends javax.swing.JPanel {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 embarqueMouseEntered(evt);
             }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                embarqueMouseExited(evt);
+            }
         });
         jPanel2.add(embarque, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 380, 291));
 
@@ -272,6 +275,10 @@ public class simuladores extends javax.swing.JPanel {
             Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_embarqueMouseEntered
+
+    private void embarqueMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_embarqueMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_embarqueMouseExited
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
