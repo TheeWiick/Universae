@@ -180,6 +180,18 @@ public class simuladores extends javax.swing.JPanel {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 tipologiaMouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                tipologiaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                tipologiaMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                tipologiaMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                tipologiaMouseReleased(evt);
+            }
         });
         jPanel2.add(tipologia, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 490, 381, 291));
 
@@ -189,6 +201,18 @@ public class simuladores extends javax.swing.JPanel {
         senalizacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 senalizacionMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                senalizacionMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                senalizacionMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                senalizacionMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                senalizacionMouseReleased(evt);
             }
         });
         jPanel2.add(senalizacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 490, 380, 291));
@@ -202,6 +226,18 @@ public class simuladores extends javax.swing.JPanel {
         rescate.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 rescateMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                rescateMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                rescateMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                rescateMousePressed(evt);
+            }
+            public void mouseReleased(java.awt.event.MouseEvent evt) {
+                rescateMouseReleased(evt);
             }
         });
         jPanel2.add(rescate, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 490, 380, 291));
@@ -375,7 +411,8 @@ public class simuladores extends javax.swing.JPanel {
             utilidades.SetImageLabel(maniobras,utilidades.MiniaturaSimulador(idgrado, 2), dimension);
         } catch (IOException ex) {
             Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
-        }    }//GEN-LAST:event_maniobrasMouseEntered
+        }
+    }//GEN-LAST:event_maniobrasMouseEntered
 
     private void maniobrasMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maniobrasMouseExited
         Dimension dimension = new Dimension (-10, -10);
@@ -403,6 +440,114 @@ public class simuladores extends javax.swing.JPanel {
             Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
         } 
     }//GEN-LAST:event_maniobrasMouseReleased
+
+    private void tipologiaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tipologiaMouseEntered
+        Dimension dimension = new Dimension (-5, -5);
+        try {
+            utilidades.SetImageLabel(tipologia,utilidades.MiniaturaSimulador(idgrado, 3), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_tipologiaMouseEntered
+
+    private void tipologiaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tipologiaMouseExited
+        Dimension dimension = new Dimension (-10, -10);
+        try {
+            utilidades.SetImageLabel(tipologia,utilidades.MiniaturaSimulador(idgrado, 3), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_tipologiaMouseExited
+
+    private void tipologiaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tipologiaMousePressed
+    Dimension dimension = new Dimension (-10, -10);
+        try {
+            utilidades.SetImageLabel(tipologia,utilidades.MiniaturaSimulador(idgrado, 3), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_tipologiaMousePressed
+
+    private void tipologiaMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tipologiaMouseReleased
+        Dimension dimension = new Dimension (-5, -5);
+        try {
+            utilidades.SetImageLabel(tipologia,utilidades.MiniaturaSimulador(idgrado, 3), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        } 
+    }//GEN-LAST:event_tipologiaMouseReleased
+
+    private void senalizacionMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_senalizacionMouseEntered
+        Dimension dimension = new Dimension (-5, -5);
+        try {
+            utilidades.SetImageLabel(senalizacion,utilidades.MiniaturaSimulador(idgrado, 4), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_senalizacionMouseEntered
+
+    private void senalizacionMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_senalizacionMouseExited
+        Dimension dimension = new Dimension (-10, -10);
+        try {
+            utilidades.SetImageLabel(senalizacion,utilidades.MiniaturaSimulador(idgrado, 4), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_senalizacionMouseExited
+
+    private void senalizacionMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_senalizacionMousePressed
+    Dimension dimension = new Dimension (-10, -10);
+        try {
+            utilidades.SetImageLabel(senalizacion,utilidades.MiniaturaSimulador(idgrado, 4), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_senalizacionMousePressed
+
+    private void senalizacionMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_senalizacionMouseReleased
+        Dimension dimension = new Dimension (-5, -5);
+        try {
+            utilidades.SetImageLabel(senalizacion,utilidades.MiniaturaSimulador(idgrado, 4), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        } 
+    }//GEN-LAST:event_senalizacionMouseReleased
+
+    private void rescateMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rescateMouseEntered
+        Dimension dimension = new Dimension (-5, -5);
+        try {
+            utilidades.SetImageLabel(rescate,utilidades.MiniaturaSimulador(idgrado, 5), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_rescateMouseEntered
+
+    private void rescateMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rescateMouseExited
+        Dimension dimension = new Dimension (-10, -10);
+        try {
+            utilidades.SetImageLabel(rescate,utilidades.MiniaturaSimulador(idgrado, 5), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_rescateMouseExited
+
+    private void rescateMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rescateMousePressed
+    Dimension dimension = new Dimension (-10, -10);
+        try {
+            utilidades.SetImageLabel(rescate,utilidades.MiniaturaSimulador(idgrado, 5), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_rescateMousePressed
+
+    private void rescateMouseReleased(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rescateMouseReleased
+        Dimension dimension = new Dimension (-5, -5);
+        try {
+            utilidades.SetImageLabel(rescate,utilidades.MiniaturaSimulador(idgrado, 5), dimension);
+        } catch (IOException ex) {
+            Logger.getLogger(simuladores.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_rescateMouseReleased
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
